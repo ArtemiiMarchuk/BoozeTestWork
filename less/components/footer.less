@@ -1,0 +1,56 @@
+// main: ../main.less
+
+.footer{
+
+  &__first{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #202020;
+    padding:50px 50px;
+    @media @breakpoint-md {
+      display:block;
+      padding-left: 10px;
+    }
+  }
+  &__img{
+    width:175px;
+  }
+  &__link{
+    .font("Robotolight",16px,white,none,300);
+    margin-bottom: 5px;
+    @media @breakpoint-md {
+      margin-top:40px;
+    }
+  }
+  &__contact{
+    display:flex;
+    justify-content: space-around;
+    width:411px;
+    @media @breakpoint-md {
+      width:311px;
+    }
+  }
+  &__second{
+    background: black;
+    padding:17px 0;
+  }
+  &__sub{
+    .font("Robotolight",16px,#616161,none,300);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/

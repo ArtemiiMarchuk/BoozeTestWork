@@ -1,0 +1,55 @@
+// out: ../style.css, compress: true
+
+@import "utils/vars.less";
+@import "utils/mixins.less";
+@import "utils/fonts.less";
+@import "components/header.less";
+@import "components/howwork.less";
+@import "components/connect.less";
+@import "components/footer.less";
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+body{
+  margin:0;
+  padding: 0;
+}
+html{
+  font-size: 10px;
+  @media @breakpoint-md {
+    font-size: 7px;
+  }
+  @media @breakpoint-sm {
+    font-size: 5px;
+  }
+}
+button:focus,button:active {
+   outline: none;
+   box-shadow: none;
+}
+.slick-slide {
+    outline: none
+}
+a,a:hover,a:focus {
+  text-decoration: none;
+  color:inherit;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/

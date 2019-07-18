@@ -1,0 +1,225 @@
+// main: ../main.less
+
+.header{
+  background-image: url(img/HeaderBG.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width:100%;
+  min-height: 700px;
+  transform-style: inherit;
+  &__downimg{
+    width:183px;
+    @media @breakpoint-md {
+      width:100px;
+    }
+  }
+  &__download{
+    margin-top:123px;
+    width:462px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    @media @breakpoint-md {
+      width:300px;
+      margin-top:50px;
+    }
+  }
+  &__logo{
+    width:227px;
+    margin:25px 50px;
+    display: inline-block;
+    margin-bottom: 108px;
+    @media @breakpoint-md {
+      width:200px;
+      margin:10px 20px;
+    }
+  }
+  &__button{
+    position:absolute;
+    top:25px;
+    right:50px;
+    border:none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s;
+    z-index: 800;
+    @media @breakpoint-sm {
+      right:20px;
+    }
+    &:hover{
+      .menu-stick{
+        &-1,&-2,&-3{
+          width:55px;
+        }
+      }
+    }
+    .menu-stick{
+      &-1,&-2,&-3{
+        height:4px;
+        width:55px;
+        background: white;
+        /*background: #636363;*/
+        margin-bottom: 9px;
+        transition: 0.2s;
+        display:block;
+        transform-origin: 35% 35%;
+        transform: rotate(0);
+      }
+      &-1{
+        transition: transform 0.6s;
+        /*transform: rotate(45deg);*/
+      }
+      &-3{
+        transition: transform 0.6s;
+        /*transform: rotate(-45deg);*/
+      }
+      &-2{
+        width:42px;
+        margin-left: 13px;
+        /*display: none;*/
+      }
+    }
+  }
+  &__menu{
+    position: absolute;
+    width:0;
+    overflow: hidden;
+    height: 100vh;
+    min-height: 700px;
+    top:0;
+    right:0;
+    background: #202020;
+    padding-top: 30px;
+    transition: 0.2s;
+    z-index: 600;
+  }
+  &__menuLogo{
+    width:108px;
+    display: block;
+    margin:auto;
+    margin-bottom: 98px;
+  }
+  &__list{
+    width:100%;
+    text-align: center;
+    padding: 0 50px;
+    margin-bottom: 90px;
+  }
+  &__item{
+    list-style-type: none;
+    .font("OpenSansSemiBold",16px,white,uppercase,normal);
+    border-bottom: 1px solid #343434;
+    padding:16px 0;
+    cursor:pointer;
+    transition: 0.1s;
+    &:hover{
+      color:#ef4b4b;
+      border-bottom: 4px solid #ef4b4b;
+    }
+  }
+  &__title{
+    .font("Robotomedium",7.6rem,white,uppercase,500);
+  }
+  &__subtitle{
+    .font("Robotolight",3.6rem,white,uppercase,300);
+    margin-bottom: 10px;
+  }
+  &__iphoneimg{
+    width:54%;
+    float:right;
+    margin-top:7px;
+    @media @breakpoint-md {
+      width:40%;
+      display:block;
+      margin:auto;
+      float:none;
+    }
+    @media @breakpoint-sm {
+      width:50%;
+    }
+  }
+  &__caption{
+    padding-bottom: 45px;
+    @media @breakpoint-xl {
+      padding-top:45px;
+    }
+  }
+
+  &__lines{
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:10;
+    @media @breakpoint-xl {
+      display:none;
+    }
+  }
+  &__leftline{
+    height:2px;
+  }
+  &__phoneline{
+    right:0;
+    left:auto;
+  }
+  &__bockline{
+    right: 0;
+    left:auto;
+    height:2px;
+  }
+  &__sidebar{
+    position:static;
+  }
+}
+.menu{
+  &__download{
+    width:100%;
+    height:20px;
+    padding: 0 50px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__img{
+    width:103px;
+  }
+  &__bg{
+    width:100%;
+    height:0;
+    position: fixed;
+    top:0;
+    left:0;
+    background: black;
+    opacity:0.5;
+    transition: 0.2s;
+    z-index: 600;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/

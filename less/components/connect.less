@@ -1,0 +1,107 @@
+// main: ../main.less
+
+.connect{
+  padding: 0;
+  &__title{
+    .font("Robotomedium",5rem,black,uppercase,500);
+    margin-bottom: 86px;
+  }
+  &__item{
+    position: relative;
+    margin:0 5px;
+    cursor:pointer;
+    &:hover{
+      .connect__bg{
+        opacity:0.5;
+      }
+      .connect__hidetext,.connect__plus{
+        opacity:1;
+      }
+      .connect__frame{
+        outline: 2px solid #ef4b4b;
+        outline-offset: -30px;
+      }
+    }
+  }
+  &__img{
+    width:100%;
+  }
+  &__caption{
+    padding:20px 0;
+    background: #f0f0f0;
+  }
+  &__name{
+    .font("Robotobold",2.4rem,black,uppercase,bold);
+  }
+  &__classification{
+    .font("Robotolight",2rem,#7d7d7d,lowercase,300);
+  }
+  &__bg{
+    background: black;
+    filter: alpha(opacity=60);
+    -moz-opacity: 0.6;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition:0.2s;
+    z-index:50;
+  }
+  &__group{
+    position: relative;
+  }
+  &__hidetext{
+    position:absolute;
+    top:50%;
+    opacity:0;
+    left:50%;
+    transition:0.2s;
+    .font("Robotolight",2.2rem,white,none,300);
+    z-index:100;
+  }
+  &__frame{
+    width:100%;
+    height:100%;
+    position:absolute;
+    transition:0.35s;
+    z-index:150;
+  }
+  &__plus{
+    position:absolute;
+    top:50%;
+    left:50%;
+    font-size:8rem;
+    color:#ef4b4b;
+    font-weight:lighter;
+    opacity:0;
+    transition:0.2s;
+    z-index:200;
+  }
+  &__button{
+    .font("Robotomedium",22px,#ef4b4b,none,500);
+    background:white;
+    border-radius: 5px;
+    border:2px solid #ef4b4b;
+    outline: 0;
+    padding: 10px 26px;
+    display:block;
+    margin:73px auto;
+    transition: 0.2s;
+    &:hover{
+      color:white;
+      background: #ef4b4b;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+/**/
